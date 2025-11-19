@@ -2,6 +2,7 @@
 
 int	ft_strlen(const char *s)
 {
+	(void)s;
 	// TODO: Implement strlen function
 	return (0);
 }
