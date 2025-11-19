@@ -1,0 +1,25 @@
+# Object and executable files
+*.o
+*.a
+*.out
+push_swap
+checker
+
+# Object directory
+objs/
+obj/
+
+# macOS
+.DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Test files
+test
+a.out
+*.dSYM/
