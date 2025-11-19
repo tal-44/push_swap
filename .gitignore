@@ -23,3 +23,6 @@ obj/
 test
 a.out
 *.dSYM/
+
+# CodeQL
+_codeql_detected_source_root
