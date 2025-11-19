@@ -23,7 +23,12 @@ LIBFT_DIR	= libft
 LIBFT		= $(LIBFT_DIR)/libft.a
 
 # Source files
-SRCS		= $(SRCS_DIR)/main.c
+SRCS		= $(SRCS_DIR)/main.c \
+			  $(SRCS_DIR)/swap_operations.c \
+			  $(SRCS_DIR)/push_operations.c \
+			  $(SRCS_DIR)/rotate_operations.c \
+			  $(SRCS_DIR)/reverse_rotate_operations.c \
+			  $(SRCS_DIR)/stack_utils.c
 
 # Object files
 OBJS		= $(SRCS:$(SRCS_DIR)/%.c=$(OBJS_DIR)/%.o)
