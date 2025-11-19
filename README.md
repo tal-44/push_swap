@@ -26,6 +26,18 @@ push_swap/
 └── author            # Archivo de autor (estándar 42)
 ```
 
+## Clonar el Proyecto
+
+Para clonar el proyecto con el submódulo libft:
+```bash
+git clone --recurse-submodules https://github.com/tal-44/push_swap.git
+```
+
+Si ya clonaste el repositorio sin los submódulos:
+```bash
+git submodule update --init --recursive
+```
+
 ## Compilación
 
 Para compilar el proyecto:

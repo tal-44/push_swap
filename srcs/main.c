@@ -2,12 +2,14 @@
 
 int	main(int argc, char **argv)
 {
-	(void)argc;
-	(void)argv;
+	char	**numbers;
+	int		error;
+
 	if (argc < 2)
+	{
+		numbers = cast(argc - 1, argv + 1)
+		
 		return (0);
-	// TODO: Implement argument parsing
-	// TODO: Implement stack initialization
-	// TODO: Implement sorting
-	return (0);
+	}
+	
 }
