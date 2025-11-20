@@ -12,23 +12,28 @@ push_swap/
 │   └── push_swap.h
 ├── srcs/             # Archivos fuente (.c)
 │   ├── main.c
-│   ├── push_operations.c
-│   ├── reverse_rotate_operations.c
-│   ├── rotate_operations.c
-│   ├── stack_utils.c
-│   └── swap_operations.c
-├── libft/            # Biblioteca personalizada de funciones C
+│   ├── cast.c
+│   └── push_swap.c
+├── libft/            # Submódulo: Biblioteca personalizada de funciones C
 │   ├── Makefile
 │   ├── libft.h
+│   ├── ft_printf/   # ft_printf integrado en libft
+│   ├── gnl/         # Submódulo anidado: get_next_line
 │   └── *.c
 ├── Makefile          # Archivo de compilación
 ├── .gitignore        # Archivos a ignorar por git
-└── author            # Archivo de autor (estándar 42)
+└── README.md         # Este archivo
 ```
+
+## Submódulos
+
+Este proyecto utiliza **libft** como submódulo, que a su vez contiene:
+- **ft_printf**: Integrado directamente en libft (no es submódulo)
+- **gnl** (get_next_line): Submódulo anidado dentro de libft
 
 ## Clonar el Proyecto
 
-Para clonar el proyecto con el submódulo libft:
+Para clonar el proyecto con todos los submódulos (incluidos los anidados):
 ```bash
 git clone --recurse-submodules https://github.com/tal-44/push_swap.git
 ```
@@ -37,6 +42,8 @@ Si ya clonaste el repositorio sin los submódulos:
 ```bash
 git submodule update --init --recursive
 ```
+
+**Importante:** El flag `--recursive` es necesario para inicializar los submódulos anidados (como gnl dentro de libft).
 
 ## Compilación
 
