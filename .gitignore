@@ -24,5 +24,13 @@ test
 a.out
 *.dSYM/
 
+# Subject PDF
+*.pdf
+subject.pdf
+en.subject.pdf
+
+# Explanation files
+RADIX_SORT_EXPLICACION.md
+
 # CodeQL
 _codeql_detected_source_root

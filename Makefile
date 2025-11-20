@@ -14,7 +14,16 @@ LIBFT		= $(LIBFT_DIR)/libft.a
 # Source files
 SRCS		= $(SRCS_DIR)/main.c \
 			  $(SRCS_DIR)/cast.c \
-			  $(SRCS_DIR)/push_swap.c
+			  $(SRCS_DIR)/push_swap.c \
+			  $(SRCS_DIR)/validation.c \
+			  $(SRCS_DIR)/operations/swap.c \
+			  $(SRCS_DIR)/operations/push.c \
+			  $(SRCS_DIR)/operations/rotate.c \
+			  $(SRCS_DIR)/operations/reverse_rotate.c \
+			  $(SRCS_DIR)/utils/stack_utils.c \
+			  $(SRCS_DIR)/utils/num_stack_utils.c \
+			  $(SRCS_DIR)/sort/forced_sorts.c \
+			  $(SRCS_DIR)/sort/sort.c
 
 # Object files
 OBJS		= $(SRCS:$(SRCS_DIR)/%.c=$(OBJS_DIR)/%.o)
@@ -31,7 +40,7 @@ $(NAME): $(LIBFT) $(OBJS)
 	@echo "Ejecutable creado: $(NAME)"
 
 $(OBJS_DIR)/%.o: $(SRCS_DIR)/%.c
-	@mkdir -p $(OBJS_DIR)
+	@mkdir -p $(dir $@)
 	@$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 clean:
